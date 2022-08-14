@@ -264,11 +264,11 @@ public class Script
                                 {
                                     
                                     proobj.GetAttributeByName("Готов к выдаче ").AsBoolean = true;
-                                    proobj.GetAttributeByName("Готов к выдаче  текст").Value = "Наряд-заказ открыт";//
+                                    proobj.GetAttributeByName("Готов к выдаче  текст").Value = "Заказ открыт";//
                                   
                                     
                                     router.CreateMessage(session.SessionGUID,userid/*userID*/,"Данные по договору "+proobj.GetAttributeByName("заказ").AsString+" перенесены в систему IPS","Договор : "+proobj.GetAttributeByName("Обозначение").AsString +
-                                    "\n - Назначьте участников проекта \nзаказ открыт автоматически.",2);
+                                    "\n - Назначьте участников проекта \nЗаказ открыт автоматически.",2);
                                     
                                 }
                                 else
